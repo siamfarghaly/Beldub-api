@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "soundsystems",
+  "info": {
+    "singularName": "soundsystem",
+    "pluralName": "soundsystems",
+    "displayName": "Soundsystem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "integer"
+    },
+    "lat": {
+      "type": "float",
+      "required": true
+    },
+    "long": {
+      "type": "float",
+      "required": true,
+      "unique": true
+    },
+    "fb": {
+      "type": "string"
+    },
+    "insta": {
+      "type": "string"
+    },
+    "other": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}
